@@ -1,4 +1,5 @@
 import "package:pantalla_cuentagoogle/src/shared/widgets/CustomIconButton.dart";
+import "package:pantalla_cuentagoogle/src/modules/principal/pages/principal.dart";
 import 'package:flutter/material.dart';
 
 class PaginaCuentaGoogle extends StatelessWidget {
@@ -65,6 +66,9 @@ class PaginaCuentaGoogle extends StatelessWidget {
               ]
             ),
         ),
+        body: TabBarView(
+          children: [Principal()],
+      ),
     ),
     );
   }
